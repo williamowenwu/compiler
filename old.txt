@@ -1,0 +1,49 @@
+comp05
+
+READ a
+LOADI r1 #2 
+LOADI r2 #3 
+ADD r3 r1 r2
+STORE d r3 
+LOAD r4 d 
+LOADI r5 #3 
+OR r6 r4 r5
+STORE c r6 
+LOAD r7 d 
+LOADI r8 #2 
+LOADI r9 #3 
+MUL r10 r8 r9
+AND r11 r7 r10
+STORE e r11 
+WRITE e
+
+tinyL>> enter value for "a": 1
+tinyL>> e = 4
+
+comp01
+
+READ f
+READ a
+READ c
+LOAD r1 a 
+LOAD r2 c 
+MUL r3 r1 r2
+STORE c r3 
+LOAD r4 a 
+LOADI r5 #4 
+MUL r6 r4 r5
+STORE b r6 
+LOADI r7 #3 
+LOAD r8 a 
+LOAD r9 b 
+ADD r10 r8 r9
+MUL r11 r7 r10
+STORE a r11 
+WRITE f
+WRITE a
+
+tinyL>> enter value for "f": 1
+tinyL>> enter value for "a": 1
+tinyL>> enter value for "c": 1
+tinyL>> f = 1
+tinyL>> a = 15

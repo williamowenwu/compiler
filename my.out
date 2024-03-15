@@ -1,0 +1,5 @@
+READ a
+LOADI r1 #2LOADI r2 #3+ r3 r1 r2STORE d r{'type': 'register', 'value': 'r3'} 
+LOAD r4 dLOADI r5 #3| r6 r4 r5STORE c r{'type': 'register', 'value': 'r6'} 
+LOAD r7 dLOADI r8 #2LOADI r9 #3* r10 r8 r9& r11 r7 r10STORE e r{'type': 'register', 'value': 'r11'} 
+WRITE e
